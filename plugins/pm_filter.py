@@ -114,16 +114,18 @@ async def pm_filter(client, message):
         return 
 
 
-@Client.on_callback_query(filters.regex(r"^pmnext"))
-async def pm_next_page(bot, query):
+@Client.on_callback_query(filters.regex(r"^next"))
+async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
+    if int(req) not in [query.from_user.id, 0]:
+        return await query.answer(script.ALRT_TXT, show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
-    search = PM_BUTTONS.get(key)
+    search = BUTTONS.get(key)
     if not search:
-        await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
+        await query.answer(script.OLD_ALRT_TXT, show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -134,17 +136,35 @@ async def pm_next_page(bot, query):
 
     if not files:
         return
-    
-    btn = [[InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'pmfile#{file.file_id}')] for file in files ]
-                
-    if 0 < offset <= 10:
-        off_set = 0
-    elif offset == 0:
-        off_set = None
+    settings = await get_settings(query.message.chat.id)
+    reqnxt  = query.from_user.id if query.from_user else 0
+    if settings['button']:
+        btn = [
+            [
+                InlineKeyboardButton(
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
+                ),
+            ]
+            for file in files
+        ]
     else:
-        off_set = offset - 10
-    if n_offset == 0:
-        btn.append(
+        btn = [
+            [
+                InlineKeyboardButton(
+                    text=f"{file.file_name}", 
+                    url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
+                ),
+                InlineKeyboardButton(
+                    text=f"{get_size(file.file_size)}", 
+                    url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
+                ),
+            ]
+            for file in files
+        ]
+    try:
+        if settings['auto_delete']:
+            btn.insert(0,
             [InlineKeyboardButton("⏪ BACK", callback_data=f"pmnext_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"📃 Pages {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")]                                  
         )
