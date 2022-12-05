@@ -78,7 +78,7 @@ async def g_fil_mod(client, message):
           await m.edit("𝚄𝚂𝙴 :- /g_filter on 𝙾𝚁 /g_filter off")
 
 
-@Client.on_message(filters.group & filters.text & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.incoming & filters.group)
+@Client.on_message(filters.text & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.incoming & filters.group)
 async def give_filter(client, message):
     if G_FILTER:
         if G_MODE.get(str(message.chat.id)) == "False":
@@ -101,7 +101,7 @@ async def give_filter(client, message):
                 await auto_filter(client, message)   
 
 
-@Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
+@Client.on_message(filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
 async def pm_filter(client, message):
     if PMFILTER:
         if G_FILTER:
