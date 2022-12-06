@@ -18,7 +18,7 @@ async def stats(bot, update):
 
     ms_g = f"""<b><u>👾 ʙᴏᴛ sᴛᴀᴛᴜs 👾</b></u>
 
-ᴜᴘᴛɪᴍᴇ: <code>{currentTime}</code>
+</b>ᴜᴘᴛɪᴍᴇ:</b> <code>{currentTime}</code>
 ᴄᴘᴜ ᴜsᴀɢᴇ: <code>{cpu_usage}%</code>
 ʀᴀᴍ ᴜsᴀɢᴇ: <code>{ram_usage}%</code>
 ᴛᴏᴛᴀʟ ᴅɪsᴋ sᴘᴀᴄᴇ: <code>{total}</code>
