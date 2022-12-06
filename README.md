@@ -1,6 +1,6 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗪𝗘𝗟𝗖𝗢𝗠+𝗧𝗢+𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑+𝐁𝐎𝐓!;𝗖𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗧𝗘𝗔𝗠+𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥+𝗕𝗢𝗧!;𝗔+𝗦𝗜𝗠𝗣𝗟𝗘+𝗧𝗚+𝗔𝗨𝗧𝗢𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧!)</p>
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗪𝗘𝗟𝗖𝗢𝗠+𝗧𝗢+IMDB+𝐁𝐎𝐓!;𝗖𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗧𝗘𝗔𝗠+IMDB+𝗕𝗢𝗧!;𝗔+ADVANCE+𝗧𝗚+𝗔𝗨𝗧𝗢𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧!)</p>
 <p align="center">
-  <img src="https://telegra.ph/file/cf1a9362643ec3375589d.jpg" alt="MKN BOTZ LOGO">
+  <img src="https://graph.org/file/bbbe9301c03557f956648.jpg" alt="IMDB BOT LOGO">
 </p>
 <h1 align="center">
   <b> 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑 𝐁𝐎𝐓</b>
@@ -20,12 +20,14 @@
 
 - [x] Auto Filter
 - [x] Manual Filter
+- [x] Unlimited Fonts Design
 - [x] IMDB
 - [x] Admin Commands
-- [x] Broadcast
+- [x] Group Broadcast & Pin
+- [x] Users Broadcast
 - [x] Index
 - [x] IMDB search
-- [x] Inline Search
+- [x] PM Search
 - [x] Random pics
 - [x] ids and User info 
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
@@ -95,7 +97,7 @@ broadcast - to broadcast a message to all Eva Maria users
 
 ## TELAGRAM SUPPORT 
 
-* [![MKN BOTZ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/mkn_bots_updates)
+* [![IMDB SUPPORT ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/Imdb_updates)
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
