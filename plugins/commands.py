@@ -44,11 +44,10 @@ async def start(client, message):
             InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates")
             ],[      
             InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
-            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),         
+            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),
+            ],[          
+            InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@noharaadda')    
         ]]
-            [[
-            InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
-            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
         m=await message.reply_sticker("CAACAgUAAxkBAAEGtA9jjvhQ8FyagyM83iMp0zv0TfOpWQACCQgAAiuPeFQQWgQ8n3WnMysE")
@@ -97,11 +96,10 @@ async def start(client, message):
             InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates")
             ],[      
             InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
-            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),                    
-        ]]
-            [[
-            InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
-            ]]
+            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),         
+            ],[          
+            InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@noharaadda')           
+        ]]         
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
         m=await message.reply_sticker("CAACAgUAAxkBAAEGsUpjjcJC_ZMdiaYhrpCxT7c3prAEoQACrwgAAkLncVQv2pqCLrsUlysE")
