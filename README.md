@@ -92,12 +92,13 @@ enable - re-enable chat.
 ban_user  - to ban a user.
 unban_user  - to unban a user.
 channel - to get list of total connected channels
-broadcast - to broadcast a message to all Eva Maria users
+broadcast - to broadcast a message to all users
+group_broadcast - to broadcast a message to all groups & pin
 ```
 
 ## TELAGRAM SUPPORT 
 
-* [![IMDB SUPPORT ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/Imdb_updates)
+* [![IMDB SUPPORT ](https://img.shields.io/static/v1?label=Imdb&message=Bot&color=critical)](https://t.me/Imdb_updates)
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
