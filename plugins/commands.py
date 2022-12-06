@@ -44,7 +44,9 @@ async def start(client, message):
             InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates")
             ],[      
             InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
-            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
+            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),
+            [
+            InlineKeyboardButton("ᴏᴜʀ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Imdb_updates")         
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -94,7 +96,9 @@ async def start(client, message):
             InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates")
             ],[      
             InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
-            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
+            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),
+            [
+            InlineKeyboardButton("ᴏᴜʀ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Imdb_updates")          
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
