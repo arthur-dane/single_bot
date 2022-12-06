@@ -3,7 +3,7 @@
   <img src="https://graph.org/file/bbbe9301c03557f956648.jpg" alt="IMDB BOT LOGO">
 </p>
 <h1 align="center">
-  <b> 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑 𝐁𝐎𝐓</b>
+  <b> ɪᴍᴅʙ ʙᴏᴛ </b>
 </h1>
 
 [![Stars](https://img.shields.io/github/stars/MrMKN/PROFESSOR-BOT?style=flat-square&color=yellow)](https://github.com/MrMKN/PROFESSOR-BOT/stargazers)
