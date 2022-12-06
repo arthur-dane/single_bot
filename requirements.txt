@@ -11,3 +11,4 @@ psutil
 aiohttp
 pytz
 aiofiles
+speedtest
