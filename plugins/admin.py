@@ -16,14 +16,14 @@ async def stats(bot, update):
     ram_usage = psutil.virtual_memory().percent
     disk_usage = psutil.disk_usage('/').percent
 
-    ms_g = f"""<b><u>Bot Status</b></u>
+    ms_g = f"""<b><u>👾 ʙᴏᴛ sᴛᴀᴛᴜs 👾</b></u>
 
-Uptime: <code>{currentTime}</code>
-CPU Usage: <code>{cpu_usage}%</code>
-RAM Usage: <code>{ram_usage}%</code>
-Total Disk Space: <code>{total}</code>
-Used Space: <code>{used} ({disk_usage}%)</code>
-Free Space: <code>{free}</code> """
+ᴜᴘᴛɪᴍᴇ: <code>{currentTime}</code>
+ᴄᴘᴜ ᴜsᴀɢᴇ: <code>{cpu_usage}%</code>
+ʀᴀᴍ ᴜsᴀɢᴇ: <code>{ram_usage}%</code>
+ᴛᴏᴛᴀʟ ᴅɪsᴋ sᴘᴀᴄᴇ: <code>{total}</code>
+ᴜsᴇᴅ sᴘᴀᴄᴇ: <code>{used} ({disk_usage}%)</code>
+ꜰʀᴇᴇ sᴘᴀᴄᴇ: <code>{free}</code> """
 
     msg = await bot.send_message(chat_id=update.chat.id, text="__Processing...__", parse_mode=enums.ParseMode.MARKDOWN)         
     await msg.edit_text(text=ms_g, parse_mode=enums.ParseMode.HTML)
