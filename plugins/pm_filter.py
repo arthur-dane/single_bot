@@ -1431,14 +1431,6 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         search, files, offset, total_results = pmspoll
     pre = 'pmfilep' if PROTECT_CONTENT else 'pmfile'
     if SINGLE_BUTTON:
-        btn = [[InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
-                    url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
-                ),
-            ]
-            for file in files
-        ]
-    else:
         btn = [[InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}')] for file in files]
     else:
         btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'{pre}#{file.file_id}',),
@@ -1447,11 +1439,6 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         key = f"{message.chat.id}-{message.id}"
         PM_BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
-        btn.append(
-            [InlineKeyboardButton(text=f"📄 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-            InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"pmnext_{req}_{key}_{offset}")]
-        )
-    else:
         btn.append(
             [InlineKeyboardButton(text="📄 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
