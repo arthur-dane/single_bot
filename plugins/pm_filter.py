@@ -872,9 +872,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("sᴇᴀʀᴄʜ", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates")
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/movies_halt_update")
             ],[
-            InlineKeyboardButton("ᴏᴜʀ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Imdb_updates")
+            InlineKeyboardButton("ᴏᴜʀ ᴄʜᴀɴɴᴇʟ", url="https://t.me/movies_halt")
             ],[      
             InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
             InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
