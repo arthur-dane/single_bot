@@ -1,5 +1,5 @@
 class script(object):   
-    HELP_TXT = """𝙷𝙴𝚈 {}\n𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+    HELP_TXT = """Hey {}\nHere Is My Help Commands."""
 
     ABOUT_TXT = """<b>🤖 My Name : <a href=https://t.me/DoraemonPocketBot><b>Doraemon Pocket</b></a>\n
 👨‍💻 Developer : <a href=https://t.me/aarthur_dayne><b>Arthur Dayne</b></a>\n
