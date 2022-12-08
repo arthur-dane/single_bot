@@ -1438,7 +1438,9 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         search, files, offset, total_results = pmspoll
     pre = 'pmfilep' if PROTECT_CONTENT else 'pmfile'
     if SINGLE_BUTTON:
-        btn = [[InlineKeyboardButton(
+        btn = [
+            [
+                InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
@@ -1446,13 +1448,25 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             for file in files
         ]
     else:
-        btn = [[InlineKeyboardButton(
+        btn = [
+            [
+                InlineKeyboardButton(
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
+                ),
+                InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
             for file in files
-        ]             
+        ]
+
+    btn.insert(0,
+        [
+            InlineKeyboardButton(text="⚡HOW TO DOWNLOAD⚡", url='https://t.me/Movies_Web0')
+        ]
+    )             
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         PM_BUTTONS[key] = search
