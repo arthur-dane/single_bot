@@ -52,7 +52,7 @@ FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 �
 RemoveBG_API = environ.get("RemoveBG_API", "")
 WELCOM_PIC = environ.get("WELCOM_PIC", "")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "Hai {user}\nwelcome to {chat}")
-PMFILTER = bool(environ.get("PMFILTER"))
+PMFILTER = bool(environ.get("PMFILTER",True))
 G_FILTER = bool(environ.get("G_FILTER", True))
 BUTTON_LOCK = bool(environ.get("BUTTON_LOCK", True))
 
@@ -76,6 +76,11 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
 
 # URL SHORTNER
+SHORTENER_API = environ.get("SHORTENER_API", 'b0e8c7cfe1b1f58accbb8884b72cc67a58feeeca')
+LONG_DROPLINK_URL = environ.get("LONG_DROPLINK_URL", False)
+
+
+
 
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'shorturllink.in')
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '5b71a61383a7d019b076e9babcbe33ca94a31642')
