@@ -50,7 +50,7 @@ Credits ›› <a href=https://t.me/movies_halt><b>Shizuka</b></a>"""
 
     BUTTON_TXT = """Help: <b>Buttons</b>
 
- This bot Supports both url and alert inline buttons.
+- This bot Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allow you to send buttons without any content, so content is mandatory.
