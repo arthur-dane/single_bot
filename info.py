@@ -76,7 +76,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
 
 # URL SHORTNER
-SHORTENER_API = environ.get("SHORTENER_API", 'b0e8c7cfe1b1f58accbb8884b72cc67a58feeeca')
+SHORTENER_API = environ.get("SHORTENER_API", '5b71a61383a7d019b076e9babcbe33ca94a31642')
 LONG_DROPLINK_URL = environ.get("LONG_DROPLINK_URL", False)
 
 
