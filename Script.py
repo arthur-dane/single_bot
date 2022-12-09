@@ -11,11 +11,11 @@ class script(object):
 🌟 Version : <a href='https://www.google.com'> v 1.0</a>\n</b>"""
 
     SOURCE_TXT = """<b>NOTE:</b>
-- source code here 👉 :<a href=https://t.me/movies_halt_owner_bot>Click Me</a>
+• source code here 👉 :<a href=https://t.me/movies_halt_owner_bot>Click Me</a>
 
 <b>DEVS:</b>
-- 𝙳𝚎𝚟 1<a href=https://t.me/arthur_dayne>Arthur Dayne</a>
-- 𝙳𝚎𝚟 2<a href=https://t.me/astatine_085>Astatine 85</a>"""
+• Dev 1<a href=https://t.me/aarthur_dayne>Arthur Dayne</a>
+• Dev 2<a href=https://t.me/astatine_085>Astatine 85</a>"""
 
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
 
@@ -31,7 +31,7 @@ class script(object):
 
 <code>/batch https://t.me/movies_halt_owner_bot https://t.me/movies_halt</code>
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/movies_halt><b>Shizuka</b></a>"""
+Credits ›› <a href=https://t.me/movies_halt><b>Shizuka</b></a>"""
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -48,11 +48,9 @@ class script(object):
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>
 
-• <code>/g_filter off</code> use this commoand + on/off in your group to control global filter in your group"""
-   
     BUTTON_TXT = """Help: <b>Buttons</b>
 
--this bot Supports both url and alert inline buttons.
+• This bot Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allow you to send buttons without any content, so content is mandatory.
@@ -70,8 +68,6 @@ class script(object):
 
 • /autofilter on - autofilter enable in yor chat
 • /autofilter off - autofilter disable in your chat 
-
-𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝚂 𝚃𝙷𝙴 𝙵𝙴𝙰𝚃𝚄𝚁𝙴 𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙰𝙽𝙳 𝚂𝙰𝚅𝙴  𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙸𝙲𝙰𝙻𝙻𝚈 𝙵𝚁𝙾𝙼 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙶𝚁𝙾𝚄𝙿. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙴 𝙵𝙾𝙻𝙻𝙾𝚆𝙸𝙽𝙶 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝚃𝙾 𝙾𝙽 𝙰𝙽𝙳 𝙾𝙵𝙵 𝚃𝙷𝙴 𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿../
 
 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 :-
 ›› /set_template - 𝚂𝙴𝚃 𝙲𝚄𝚂𝚃𝙾𝙼 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙵𝙾𝚁 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁. 
