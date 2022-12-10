@@ -21,20 +21,16 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        buttons = [
-            [
-                InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
-            ],
-            [
-                InlineKeyboardButton('⚡ Subscribe ⚡', url=f"https://t.me/movies_halt"),
-            ]
-            ]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.B_LINK), reply_markup=reply_markup)
-        await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
+        buttons = [[           
+            InlineKeyboardButton('👀 Support 👀', url=f'https://t.me/{SUPPORT_CHAT}')
+            ],[
+            InlineKeyboardButton('🎭 Help 🎭', url=f"https://t.me/{temp.U_NAME}?start=help")
+            ]]
+        await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
+        await asyncio.sleep(2) 
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
-            await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, message.chat.username, total, temp.B_LINK, "Unknown"))       
+            await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(a=message.chat.title, b=message.chat.id, c=message.chat.username, d=total, f=temp.B_LINK, e="Unknown"))       
             await db.add_chat(message.chat.id, message.chat.title, message.chat.username)
         return 
     if not await db.is_user_exist(message.from_user.id):
@@ -42,18 +38,24 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('↪️ Add Me To Your Group  ↩️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton("↪️ Add Me to Your Group ↩️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton('⚡ Subscribe ⚡', url='https://t.me/movies_halt'),
-            InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
-            ],[
-            InlineKeyboardButton('🎭 Help 🎭', callback_data='help'),
-            InlineKeyboardButton('🧩 About 🧩', callback_data='about')
+            InlineKeyboardButton("⚡ Subscribe ⚡", url="https://t.me/movies_halt"), 
+            InlineKeyboardButton("🤖 Updates 🤖", url="https://t.me/movies_halt_update")
+            ],[      
+            InlineKeyboardButton("🎭 Help 🎭", callback_data="help"),
+            InlineKeyboardButton("🧩 About 🧩", callback_data="about"),
+            ],[          
+            InlineKeyboardButton('🧑‍💻 Contact Owner 🧑‍💻', url='https://t.me/movies_halt_owner_bot')    
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        m=await message.reply_sticker("CAACAgUAAxkBAAEGtDtjjwMDy2VxBDPUdthF75PKjolepgACNAYAAjDgeFTjDnvThZ_q6ysE")
+        await asyncio.sleep(1)
+        await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.B_LINK),
+            caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -67,7 +69,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 Join Updates Channel 🔥", url=invite_link.invite_link
+                    "ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link
                 )
             ]
         ]
@@ -83,23 +85,29 @@ async def start(client, message):
             chat_id=message.from_user.id,
             text=FORCE_SUB_TEXT,
             reply_markup=InlineKeyboardMarkup(btn),
-            parse_mode=enums.ParseMode.MARKDOWN
+            parse_mode=enums.ParseMode.DEFAULT
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('↪️ Add Me To Your Group ↩️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton("↪️ Add Me To Your Group ↩️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton('⚡ Subscribe ⚡', url='https://t.me/movies_halt'),
-            InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
-            ],[
-            InlineKeyboardButton('🎭 Help 🎭', callback_data='help'),
-            InlineKeyboardButton('🧩 About 🧩', callback_data='about')
-        ]]
+            InlineKeyboardButton("⚡ Subscribe ⚡", url="https://t.me/movies_halt"), 
+            InlineKeyboardButton("🤖 Updates 🤖", url="https://t.me/movies_halt_owner")
+            ],[      
+            InlineKeyboardButton("🎭 Help 🎭", callback_data="help"),
+            InlineKeyboardButton("🧩 About 🧩", callback_data="about"),         
+            ],[          
+            InlineKeyboardButton('🧑‍💻 Contact Owner 🧑‍💻', url='https://t.me/movies_halt_owner_bot')           
+        ]]         
         reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        m=await message.reply_sticker("CAACAgUAAxkBAAEGtDtjjwMDy2VxBDPUdthF75PKjolepgACNAYAAjDgeFTjDnvThZ_q6ysE")
+        await asyncio.sleep(1)
+        await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.B_LINK),
+            caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
