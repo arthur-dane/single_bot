@@ -22,9 +22,9 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[           
-            InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
+            InlineKeyboardButton("🤖 Updates 🤖", url="https://t.me/movies_halt_update")
             ],[
-            InlineKeyboardButton('👀 Help 👀', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton("👀 Help 👀", url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -38,13 +38,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('↪️ Add Me To Your Group  ↩️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton("↪️ Add Me To Your Group  ↩️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton('⚡ Subscribe ⚡', url='https://t.me/movies_halt'),
-            InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
+            InlineKeyboardButton("⚡ Subscribe ⚡", url="https://t.me/movies_halt"),
+            InlineKeyboardButton("🤖 Updates 🤖", url="https://t.me/movies_halt_update")
             ],[
-            InlineKeyboardButton('🎭 Help 🎭', callback_data="help"),
-            InlineKeyboardButton('🧩 About 🧩', callback_data="about")
+            InlineKeyboardButton("🎭 Help 🎭", callback_data="help"),
+            InlineKeyboardButton("🧩 About 🧩", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
