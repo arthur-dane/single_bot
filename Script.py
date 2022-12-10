@@ -1,4 +1,6 @@
 class script(object):   
+    START_TXT = """<b>Hey {} 👋🏻\nI am here to provide unlimited movies to you all .\n\nJust Write the name of your desired movie and you will get it within few seconds. You can add me to your Groups too.</b>"""
+
     HELP_TXT = """Hey {}\nHere Is My Help Commands."""
 
     ABOUT_TXT = """<b>🤖 My Name : <a href=https://t.me/ShizukaMinamotobot><b>Shizuka Minamoto</b></a>\n
