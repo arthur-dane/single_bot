@@ -1,7 +1,7 @@
 class script(object):   
     HELP_TXT = """Hey {}\nHere Is My Help Commands."""
 
-    ABOUT_TXT = """<b>🤖 My Name : <a href=https://t.me/DoraemonPocketBot><b>Doraemon Pocket</b></a>\n
+    ABOUT_TXT = """<b>🤖 My Name : <a href=https://t.me/ShizukaMinamotobot><b>Shizuka Minamoto</b></a>\n
 👨‍💻 Developer : <a href=https://t.me/aarthur_dayne><b>Arthur Dayne</b></a>\n
 🧑‍💻 Co-Developer : <a href=https://t.me/astatine_085><b>Astatine 85</b></a>\n
 📝 Language : <a href='https://docs.pyrogram.org/'> Pyrogram</a>\n
