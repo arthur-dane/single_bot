@@ -11,15 +11,15 @@ class script(object):
 🌟 Version : <a href='https://www.google.com'> v 1.0</a>\n</b>"""
 
     SOURCE_TXT = """<b>NOTE:</b>
-- source code here 👉 :<a href=https://t.me/movies_halt_owner_bot>Click Me</a>
+- Source Code Here 👉 :<a href=https://t.me/movies_halt_owner_bot>Movies Halt</a>
 
 <b>DEVS:</b>
-- Dev 1<a href=https://t.me/aarthur_dayne>Arthur Dayne</a>
-- Dev 2<a href=https://t.me/astatine_085>Astatine 85</a>"""
+- Dev 1 <a href=https://t.me/aarthur_dayne>Arthur Dayne</a>
+- Dev 2 <a href=https://t.me/astatine_085>Astatine 85</a>"""
 
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
 
-<b>By using this module you can store files in my Database and I will give you a permanent link to access the saved files.If you want to add files from a Public Channel Send the File Link only or you want to add files from a private Channel You Must make me Admin on the Channel to Access Files...//</b>
+<b>𝙱𝚈 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝚃𝙾𝚁𝙴 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙰𝙽𝙳 𝙸 𝚆𝙸𝙻𝙻 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄 𝙰 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺  𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝚃𝙷𝙴 𝚂𝙰𝚅𝙴𝙳 𝙵𝙸𝙻𝙴𝚂.𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰 𝙿𝚄𝙱𝙻𝙸𝙲 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝙵𝙸𝙻𝚆 𝙻𝙸𝙽𝙺 𝙾𝙽𝙻𝚈  𝙾𝚁 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰  𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚈𝙾𝚄 𝙼𝚄𝚂𝚃 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽 𝚃𝙷𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝙵𝙸𝙻𝙴𝚂...//</b>
 
 ⪼ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞 ›
 
@@ -31,7 +31,7 @@ class script(object):
 
 <code>/batch https://t.me/movies_halt_owner_bot https://t.me/movies_halt</code>
 
-Credits ›› <a href=https://t.me/movies_halt><b>Shizuka</b></a>"""
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/movies_halt><b>Shizuka Minamoto</b></a>"""
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -48,9 +48,11 @@ Credits ›› <a href=https://t.me/movies_halt><b>Shizuka</b></a>"""
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>
 
+"""
+   
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- This bot Supports both url and alert inline buttons.
+-This bot Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allow you to send buttons without any content, so content is mandatory.
@@ -66,14 +68,16 @@ Credits ›› <a href=https://t.me/movies_halt><b>Shizuka</b></a>"""
     AUTOFILTER_TXT = """**𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙾𝙽/𝙾𝙵𝙵 𝙼𝙾𝙳𝚄𝙻𝙴..
 <u>USE THIS COMMAND ON YOUR GROUP</u>
 
-- /autofilter on - autofilter enable in your chat
-- /autofilter off - autofilter disable in your chat 
+• /autofilter on - autofilter enable in yor chat
+• /autofilter off - autofilter disable in your chat 
+
+𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝚂 𝚃𝙷𝙴 𝙵𝙴𝙰𝚃𝚄𝚁𝙴 𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙰𝙽𝙳 𝚂𝙰𝚅𝙴  𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙸𝙲𝙰𝙻𝙻𝚈 𝙵𝚁𝙾𝙼 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙶𝚁𝙾𝚄𝙿. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙴 𝙵𝙾𝙻𝙻𝙾𝚆𝙸𝙽𝙶 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝚃𝙾 𝙾𝙽 𝙰𝙽𝙳 𝙾𝙵𝙵 𝚃𝙷𝙴 𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿../
 
 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 :-
 ›› /set_template - 𝚂𝙴𝚃 𝙲𝚄𝚂𝚃𝙾𝙼 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙵𝙾𝚁 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁. 
 ›› /get_template - 𝙶𝙴𝚃 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙾𝙵 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/movies_halt>Shizuka</a>**"""
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/movies_halt>Movies Halt</a>**"""
 
     CONNECTION_TXT = """Help: <b>Connections</b>
 
@@ -146,20 +150,20 @@ these are the extra features of this bot
 ★ Total Groups: <code>{}</code>
 ★ Used Storage: <code>{}</code>
 ★ Free Storage: <code>{}</code>"""
-    LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
+    LOG_TEXT_G = """#NewGroup
     
-<b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}(<code>{b}</code>)</b>
-<b>᚛› 𝐆 𝐈𝐃 ⪼ @{c}
-<b>᚛› 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ {d}</b>
-<b>᚛› 𝐀𝐝𝐝𝐞𝐝 𝐁𝐲 ⪼ {e}</b>
+<b>᚛› Group ⪼ {a}(<code>{b}</code>)</b>
+<b>᚛› G ID ⪼ @{c}
+<b>᚛› Total Members ⪼ {d}</b>
+<b>᚛› Added By ⪼ {e}</b>
 
 By {f}
 """
-    LOG_TEXT_P = """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
+    LOG_TEXT_P = """#NewUser
     
-<b>᚛› 𝐈𝐃 - <code>{}</code></b>
-<b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
-<b>᚛› 𝐔𝐍 - @{}</b>
+<b>᚛› ID - <code>{}</code></b>
+<b>᚛› Name - {}</b>
+<b>᚛› UN - @{}</b>
 
 By @{} """
    
@@ -182,7 +186,7 @@ By @{} """
 
 ➪ 𝖩𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺 𝗂𝗆𝖺𝗀𝖾 𝗍𝗈 𝖾𝖽𝗂𝗍 ✨
 
-𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/movies_halt>Shizuka</a>"""
+𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/Imdb_updates>Imdb bot</a>"""
 
     RESTRIC_TXT = """➤ 𝐇𝐞𝐥𝐩: Mᴜᴛᴇ 🚫
 
@@ -238,7 +242,7 @@ Translate text to speech
 
 <b>NOTE:</b>
 
-• Bot should have admin privillage.
+• IMDb should have admin privillage.
 • These commands works on both pm and group.
 • IMDb can translate texts to 200+ languages."""
 
